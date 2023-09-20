@@ -10,11 +10,17 @@
     */
 
     //ENTRADA
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let letrasF = [];
 
-    
     //PROCESSAMENTO
-
-    
+    for (let i = 0; i < listaDeLetras.length; i++) {
+        const letra = listaDeLetras[i];
+        if (!letrasF.includes(letra.toLowerCase()) && !letrasF.includes(letra.toUpperCase())) {
+        letrasF.push(letra.toLowerCase());
+        }
+    }
+    alert(`As letras que repetem são: ` + letrasF.sort().join(", "));
     //SAÍDA
 
 </script>
