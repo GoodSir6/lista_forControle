@@ -8,10 +8,18 @@
 
     //ENTRADA
 
-    
-    //PROCESSAMENTO
 
-    
+    //PROCESSAMENTO
+    let numMaior = 0;
+    for (let i = 0; i < 5; i++) {
+        const num = Number(prompt("Insira um número:"))
+        if (numMaior < num) {
+            numMaior = num;
+        }
+    }
+
+
     //SAÍDA
+    alert(numMaior + ` é o maior.`)
 
 </script>

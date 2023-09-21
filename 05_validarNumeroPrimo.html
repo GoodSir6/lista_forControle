@@ -6,11 +6,22 @@
     */
 
     //ENTRADA
-
+    let num = parseFloat(prompt("Insira um número:"));
 
     //PROCESSAMENTO
-
+    let descobrirPrimo = 0;
+    for (let i = 1; i <= num; i++) {
+        if (num % i == 0) {
+            descobrirPrimo++;
+        }
+    }
+    if (descobrirPrimo <= 2) {
+        alert(`O número é primo!`);
+    } else {
+        alert(`O número não é primo!`);
+    }
 
     //SAÍDA
+
 
 </script>
