@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
+    let soma = 0;
 
 
     //PROCESSAMENTO
+    for (let i = 1; i <= 5; i++) {
+        let num = Number(prompt("Insira um número:"))
+        soma += num
+    }
 
-
+    alert(`A soma dos números é ${soma} e a média é de ${(soma / 5).toFixed(1).replace(".",",")}`);
     //SAÍDA
 
 </script>
